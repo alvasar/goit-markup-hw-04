@@ -39,6 +39,11 @@ html {
     /* outline: 3px solid tomato; */
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
@@ -63,17 +68,14 @@ body {
 
 /* header */
 .page-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
     background-color: var(--white-color);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
-.container.flex {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 /* Logo */
 .logo {
     margin-right: 93px;
@@ -94,13 +96,16 @@ body {
     color: #000000;
 }
 /* site-nav */
+.site-nav {
+    display: flex;
+    align-items: center;
+}
 
 /* site-menu */
 
 .site-menu {
     display: inline-block;
     display: flex;
-    margin-left: auto;
 }
 
 .site-menu .item+.item {
@@ -151,7 +156,6 @@ body {
 }
 
 /* hero */
-/* Добавли padding 200 для hero */
 .hero {
     padding: 200px 0px 200px 0px;
 
@@ -205,7 +209,6 @@ text-transform: uppercase;
         }
         
 /* Features */
-/* Обнулил margin h3 */
 .feature .title {
     margin: 0;
 }
@@ -276,7 +279,6 @@ text-transform: uppercase;
 }
 .team .item {
     margin-right: 30px;
-    margin-bottom: 0;
     width: calc((100% - 90px) / 4);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -299,18 +301,13 @@ margin: 0;
 margin-bottom: 10px;
 }
 
-/* .team-img {
-    margin-top: 0px;
-    margin-bottom: 30px;
-} */
-
 .team-list .text {
     padding: 0;
     margin: 0;
+
     font-size: 16px;
     text-align: center;
 }
-
 
 /* footer */
 .footer {
@@ -323,21 +320,18 @@ margin-bottom: 10px;
     color: var(--primary-background-color);
 }
 
-/* удалил */
-/* .address {
-    padding-bottom: 60px;
-} */
-
-.address>p {
+.address .text {
     margin: 0;
+    margin-bottom: 10px;
 
     color: var(--primary-background-color);
     font-style: normal;
 }
 
 .footer .logo {
-    display: block;
+    margin: 0;
     margin-bottom: 20px;
+    display: block;
 }
 
 .footer-link {
@@ -346,8 +340,8 @@ margin-bottom: 10px;
     text-decoration:none;
 }
 
-.list .item:not(:last-child) {
-    margin-bottom: 0;
+.footer .item:not(:last-child) {
+    margin-bottom: 10px;
      }
 
 .footer-link:hover, .footer-link:focus {
@@ -355,10 +349,6 @@ margin-bottom: 10px;
 } 
 
 /* PAGE PORTFOLIO */
-
-.section.portfolio {
-    padding-bottom: 34px;
-}
 
 /* filter */
 .filter {
@@ -434,8 +424,14 @@ margin-bottom: 10px;
     /* margin: 0px 15px 16px 15px; */
     margin: 0;
     
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
+}
+
+.portfolio .link {
+    text-decoration: none;
+
 }
 
 
