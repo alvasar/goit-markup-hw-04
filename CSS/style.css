@@ -374,45 +374,45 @@ margin-bottom: 10px;
     font-size: 16px;
     text-align: center;
 }
+/* social icons */
 
-.team .social-list {
+.team .inner-list {
     display: flex;
-    display: inline-block;
     margin: 0 32px;
 }
 
-.team .social-item {
+.team .inner-item {
     display: inherit;
 }
 
-.team .social-item + .social-item{
+.team .inner-item+.inner-item {
     margin-left: 10px;
 }
 
-.team .social-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.inner-item > .link {
+   width: 44px;
+   height: 44px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
     }
 
-.instagram {
-    background-image: url("../images/team/social-links/insta.svg");
+.link.icon-instagram {
+   background-image: url("../images/team/social-links/insta.svg");
     }
 
-.twitter {
-    background-image: url("../images/team/social-links/twitter.svg");
+.link.icon-twitter {
+   background-image: url("../images/team/social-links/twitter.svg");
     }
     
-.facebook {
-    background-image: url("../images/team/social-links/facebook.svg");
+.link.icon-facebook {
+   background-image: url("../images/team/social-links/facebook.svg");
     }
 
-.linkedin {
+.link.icon-linkedin {
     background-image: url("../images/team/social-links/linkedin.svg");
     }
+
 
 /* section partners */
 
@@ -547,7 +547,6 @@ margin-bottom: 10px;
 .footer .social-link {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
