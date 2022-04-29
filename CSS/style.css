@@ -36,7 +36,6 @@ html {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 3px solid tomato; */
 }
 
 .flex {
@@ -153,16 +152,32 @@ body {
     color: var(--accent-color);
 }
 
-.contact-link::before {
-    content: "111";
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    background-color: red;
-    color: red;
+/* phone and mail icons */
+
+.site-links .item {
+    display: flex;
+    align-items: center;
 }
 
+.site-links .item::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.icon-mail::before {
+    width: 16px;
+    height: 12px;
+    background-image: url("../images/header/icon/envelope.svg");
+}
+
+.icon-phone::before {
+    width: 10px;
+    height: 16px;
+    background-image: url("../images/header/icon/phone.svg");
+}
 
 /* hero */
 .hero {
@@ -214,7 +229,6 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    
 }
 
 /* section */
@@ -534,19 +548,19 @@ margin-bottom: 10px;
     background-size: contain;
 }
 
-.instagram {
+.footer .instagram {
     background-image: url("../images/footer/social-links/insta.svg");
 }
 
-.twitter {
+.footer .twitter {
     background-image: url("../images/footer/social-links/twitter.svg");
 }
 
-.facebook {
+.footer .facebook {
     background-image: url("../images/footer/social-links/facebook.svg");
 }
 
-.linkedin {
+.footer .linkedin {
     background-image: url("..//images/footer/social-links/linkedin.svg");
 }
 
