@@ -28,7 +28,22 @@ html {
     --primary-background-color:#FFFFFF;
     --secondary-background-color:#2F303A;
     --third-background-color:#F5F4FA;
+    --icon-cl:#AFB1B8;
+    --icon-footer-cl:#44454E;
 }
+
+
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+}
+
+/* Утилиты */
 
 .container {
     width: 1200px;
@@ -42,17 +57,19 @@ html {
     display: flex;
     align-items: center;
 }
-
-body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 1.72;
-    letter-spacing: 0.03em;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-/* Утилиты */
 .list {
     padding: 0;
     margin: 0;
@@ -154,29 +171,31 @@ body {
 
 /* phone and mail icons */
 
-.site-links .item {
-    display: flex;
-    align-items: center;
-}
-
-.site-links .item::before {
-    content: '';
+.icon-phone {
+    width:10px;
+    height:16px;
+    fill: var(--primary-text-color);
+    cursor: pointer;
     margin-right: 10px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-mail::before {
+.icon-phone:hover,
+.icon-phone:focus {
+    fill: var(--accent-color);
+}
+
+
+.icon-envelope {
     width: 16px;
     height: 12px;
-    background-image: url("../images/header/icon/envelope.svg");
+    fill: var(--primary-text-color);
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-.icon-phone::before {
-    width: 10px;
-    height: 16px;
-    background-image: url("../images/header/icon/phone.svg");
+.icon-envelope:hover,
+.icon-envelope:focus {
+    fill: var(--accent-color);
 }
 
 /* hero */
@@ -213,7 +232,7 @@ body {
 }
 
 /* Button */
-.button {
+.btn {
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -229,6 +248,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 /* section */
@@ -374,44 +394,56 @@ margin-bottom: 10px;
     font-size: 16px;
     text-align: center;
 }
-/* social icons */
 
-.team .inner-list {
+/* social icons svg */ 
+
+.inner-list {
     display: flex;
-    margin: 0 32px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.team .inner-item {
-    display: inherit;
+.button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    color: var(--icon-cl);
+    background-color: var(--primary-background-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
 }
 
-.team .inner-item+.inner-item {
+.button:hover,
+.button:focus {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.inner-item + .inner-item {
     margin-left: 10px;
 }
 
-.inner-item > .link {
-   width: 20px;
-   height: 20px;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;
-    }
 
-.link.icon-instagram {
-   background-image: url("../images/team/social-links/insta.svg");
-    }
 
-.link.icon-twitter {
-   background-image: url("../images/team/social-links/twitter.svg");
-    }
-    
-.link.icon-facebook {
-   background-image: url("../images/team/social-links/facebook.svg");
-    }
 
-.link.icon-linkedin {
-    background-image: url("../images/team/social-links/linkedin.svg");
-    }
+
+
+
+
+
+
 
 
 /* section partners */
@@ -531,42 +563,22 @@ margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.footer .social-list {
-    display: inline-block;
-    display: flex;
+
+
+/* social icons svg */
+
+.footer .button {
+    color: var(--primary-background-color);
+    background-color: var(--icon-footer-cl);
+    line-height: 40px;
 }
 
-.footer .social-item {
-    display: inherit;
+.footer .button:hover,
+.footer .button:focus {;
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
 }
 
-.footer .social-item+.social-item {
-    margin-left: 10px;
-}
-
-.footer .social-link {
-    width: 44px;
-    height: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.footer .instagram {
-    background-image: url("../images/footer/social-links/insta.svg");
-}
-
-.footer .twitter {
-    background-image: url("../images/footer/social-links/twitter.svg");
-}
-
-.footer .facebook {
-    background-image: url("../images/footer/social-links/facebook.svg");
-}
-
-.footer .linkedin {
-    background-image: url("..//images/footer/social-links/linkedin.svg");
-}
 
 /* PAGE PORTFOLIO */
 
@@ -604,6 +616,12 @@ margin-bottom: 10px;
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.portfolio-button.current {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+}
+
 /* gallery */
 .portfolio-list {
     display: flex;
