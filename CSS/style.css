@@ -384,7 +384,6 @@ margin-bottom: 10px;
 }
 
 /* social icons svg */ 
-
 .inner-list {
     display: flex;
     align-items: center;
@@ -395,7 +394,6 @@ margin-bottom: 10px;
 
 .button {
     display: inline-block;
-    padding: 0;
     border: none;
     color: var(--icon-cl);
     background-color: var(--primary-background-color);
@@ -403,7 +401,8 @@ margin-bottom: 10px;
     width: 40px;
     height: 40px;
     text-align: center;
-    line-height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;   
 }
 
 .button:hover,
@@ -416,14 +415,13 @@ margin-bottom: 10px;
     width: 20px;
     height: 20px;
     fill: currentColor;
-    vertical-align: middle;
 }
 
 .inner-item + .inner-item {
     margin-left: 10px;
 }
 
-/* section partners */
+/* section clients */
 
 .clients .section-title {
     margin-bottom: 50px;
@@ -433,16 +431,32 @@ margin-bottom: 10px;
     display: flex;
 }
 
-/* section clients */
+/*clients logo svg*/
+.client-logo {
+    display: block;
+    border: 1px solid var(--icon-cl);
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+} 
 
+.client-icon {
+width: 106px;
+height: 60px;
+}
+
+.clients .item+.item {
+    margin-left: 30px;
+}
+
+
+/* 
 .clients .item {
     display: inline-block;
     align-items: center;
 }
 
-.clients .item + .item {
-    margin-left: 30px;
-}
+
 
 .clients .link {
     display: inline-block;
@@ -476,7 +490,7 @@ margin-bottom: 10px;
 
 .link.client-6 {
     background-image: url("../images/clients-logo/logo-client6.svg");
-}
+} */
 
 
 
