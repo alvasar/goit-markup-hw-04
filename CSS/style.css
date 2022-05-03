@@ -82,7 +82,11 @@ body {
     height: auto;
 }
 
-/* header */
+/*
+---------------------------------------
+header
+----------------------------------------
+*/
 .page-header {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -119,7 +123,6 @@ body {
 /* site-menu */
 
 .site-menu {
-    display: inline-block;
     display: flex;
 }
 
@@ -147,52 +150,39 @@ body {
 /* contact links */
 .site-links {
     display: flex;
+    align-items: center;
     margin-left: auto;
 }
 
-.site-links .item+.item {
-    margin-left: 50px;
+.site-links .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .contact-link {
-    display: block;
+    display: flex;
+    align-items: center;
 
     color: var(--primary-text-color);
     text-decoration: none;
-    cursor: pointer;
     letter-spacing: 0.02em;
     font-weight: 500;
+    fill: var(--primary-text-color);
 }
 
 .contact-link:hover {
     color: var(--accent-color);
-}
-
-/* phone and mail icons */
-
-.icon-phone {
-    fill: var(--primary-text-color);
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.icon-phone:hover,
-.icon-phone:focus {
     fill: var(--accent-color);
 }
 
-.icon-envelope {
-    fill: var(--primary-text-color);
-    cursor: pointer;
+.icon-envelope, .icon-phone {
     margin-right: 10px;
 }
 
-.icon-envelope:hover,
-.icon-envelope:focus {
-    fill: var(--accent-color);
-}
-
-/* hero */
+/*
+---------------------------------------
+section hero
+----------------------------------------
+*/
 .hero {
     padding: 200px 0px 200px 0px;
     text-align: center;
@@ -259,7 +249,11 @@ body {
     text-align: center;
         }
         
-/* Features */
+/*
+---------------------------------------
+section features
+----------------------------------------
+*/
 .feature .title {
     margin: 0;
 }
@@ -282,11 +276,13 @@ body {
 /* feature icons */
 
 .feature-bg {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--third-background-color);
-    padding: 25px 100px;
 }
 
 .features-list .title {
@@ -304,7 +300,11 @@ text-transform: uppercase;
     margin-bottom: 0;
     }
 
-/* work */
+/*
+---------------------------------------
+section work
+----------------------------------------
+*/
 .section.work {
     padding-top: 0px;
 }
@@ -323,7 +323,11 @@ text-transform: uppercase;
     margin-right: 0;
 }
 
-/* team */
+/*
+---------------------------------------
+section team
+----------------------------------------
+*/
 .section.team {
  background-color: var(--third-background-color);
 }
@@ -382,16 +386,16 @@ margin-bottom: 10px;
 }
 
 .button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border: none;
     color: var(--icon-cl);
     background-color: var(--primary-background-color);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;   
+    width: 44px;
+    height: 44px;
 }
 
 .button:hover,
@@ -408,7 +412,11 @@ margin-bottom: 10px;
     margin-left: 10px;
 }
 
-/* section clients */
+/*
+---------------------------------------
+section clients
+----------------------------------------
+*/
 
 .clients .section-title {
     margin-bottom: 50px;
@@ -422,6 +430,7 @@ margin-bottom: 10px;
 .client-logo {
     display: block;
     border: 1px solid var(--icon-cl);
+    border-radius: 4px;
     padding: 16px 32px;
     width: 170px;
     height: 92px;
@@ -430,18 +439,27 @@ margin-bottom: 10px;
 
 .client-logo:hover,
 .client-logo:focus {
+    border: 1px solid var(--accent-color);
     fill: var(--accent-color);
 }
-
 
 .clients .item+.item {
     margin-left: 30px;
 }
 
-/* footer */
+/*
+---------------------------------------
+footer
+----------------------------------------
+*/
 .footer {
     padding: 60px 0px 60px 0px;
     background-color: var(--secondary-background-color);
+}
+
+.footer >.container {
+    display: flex;
+    align-items: baseline;
 }
 
 .footer .contact {
@@ -569,9 +587,12 @@ margin-bottom: 10px;
     margin-right: 0;
 }
 
-.portfolio-list .item:hover,
-.portfolio-list .item:focus {
+.portfolio-list .link{
+    display: block;
+}
 
+.portfolio-list .link:hover,
+.portfolio-list .link:focus {
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
