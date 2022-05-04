@@ -23,17 +23,16 @@
 
   <body>
     <!--header-->
-    <header class="page-header">
-      <div class="container flex">
+    <header class="header">
+      <div class="container">
+        <a
+          class="link logo"
+          href="./index.html"
+          aria-label="Логотип компании WebStudio"
+          ><span class="web">Web</span><span class="studio">Studio</span></a
+        >
         <nav class="site-nav">
-          <a
-            class="logo"
-            href="./index.html"
-            aria-label="Логотип компани WebStudio"
-            ><span class="logo-web">Web</span
-            ><span class="logo-studio">Studio</span></a
-          >
-          <ul class="site-menu list">
+          <ul class="list">
             <li class="item">
               <a class="link current" href="index.html">Студия</a>
             </li>
@@ -46,9 +45,9 @@
           </ul>
         </nav>
 
-        <ul class="site-links list">
-          <li class="item flex">
-            <a class="contact-link" href="mailto:info@devstudio.com"
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com"
               ><svg
                 class="icon-envelope"
                 aria-label="е-мейл"
@@ -60,7 +59,7 @@
             >
           </li>
           <li class="item">
-            <a class="contact-link" href="tel:+38044">
+            <a class="link" href="tel:+38044">
               <svg
                 class="icon-phone"
                 aria-label="номер телефона"
@@ -75,23 +74,21 @@
       </div>
     </header>
     <!--main-->
-    <main class="main">
+    <main>
       <!--section hero-->
       <section class="hero overlay">
         <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения <br />для вашего бизнеса
-          </h1>
+          <h1 class="title">Эффективные решения <br />для вашего бизнеса</h1>
           <button class="btn" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--section feature-->
       <section class="section feature">
         <div class="container">
-          <h2 class="section-title visually-hidden">Преимущества студии</h2>
-          <ul class="features-list list">
+          <h2 class="title visually-hidden">Преимущества студии</h2>
+          <ul class="list">
             <li class="item">
-              <div class="feature-bg">
+              <div class="icon-group">
                 <svg
                   class="feature-icon"
                   aria-label="Внимание к деталям"
@@ -101,14 +98,14 @@
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="title">Внимание к деталям</h3>
+              <h3 class="subtitle">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
             <li class="item">
-              <div class="feature-bg">
+              <div class="icon-group">
                 <svg
                   class="feature-icon"
                   aria-label="Пунктуальность"
@@ -118,14 +115,14 @@
                   <use href="./images/icons.svg#icon-clock-2"></use>
                 </svg>
               </div>
-              <h3 class="title">Пунктуальность</h3>
+              <h3 class="subtitle">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
             <li class="item">
-              <div class="feature-bg">
+              <div class="icon-group">
                 <svg
                   class="feature-icon"
                   aria-label="Планирование"
@@ -135,14 +132,14 @@
                   <use href="./images/icons.svg#icon-diagram-3"></use>
                 </svg>
               </div>
-              <h3 class="title">Планирование</h3>
+              <h3 class="subtitle">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
             <li class="item">
-              <div class="feature-bg">
+              <div class="icon-group">
                 <svg
                   class="feature-icon"
                   aria-label="Современные технологии"
@@ -152,7 +149,7 @@
                   <use href="./images/icons.svg#icon-astronaut-4"></use>
                 </svg>
               </div>
-              <h3 class="title">Современные технологии</h3>
+              <h3 class="subtitle">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -164,8 +161,8 @@
       <!--section work-->
       <section class="section work">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work-list list">
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="list">
             <li class="item">
               <img
                 class="image"
@@ -199,8 +196,8 @@
       <!--section team-->
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list list">
+          <h2 class="title">Наша команда</h2>
+          <ul class="list">
             <li class="item">
               <img
                 class="image"
@@ -208,19 +205,19 @@
                 width="270"
                 alt="Игорь Демьяненко"
               />
-              <div class="team-bg">
-                <h3 class="title">Игорь Демьяненко</h3>
+              <div class="team-group">
+                <h3 class="subtitle">Игорь Демьяненко</h3>
                 <p class="text">Product Designer</p>
                 <ul class="inner-list list">
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Инстаграм"
                         width="20"
                         height="20"
@@ -231,13 +228,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Твиттер"
                         width="20"
                         height="20"
@@ -248,13 +245,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Фейсбук"
                         width="20"
                         height="20"
@@ -265,13 +262,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Линкедин"
                         width="20"
                         height="20"
@@ -289,19 +286,19 @@
                 width="270"
                 alt="Ольга Репина"
               />
-              <div class="team-bg">
-                <h3 class="title">Ольга Репина</h3>
+              <div class="team-group">
+                <h3 class="subtitle">Ольга Репина</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="inner-list list">
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Инстаграм"
                         width="20"
                         height="20"
@@ -312,13 +309,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Твиттер"
                         width="20"
                         height="20"
@@ -329,13 +326,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Фейсбук"
                         width="20"
                         height="20"
@@ -346,13 +343,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Линкедин"
                         width="20"
                         height="20"
@@ -370,19 +367,19 @@
                 width="270"
                 alt="Николай Тарасов"
               />
-              <div class="team-bg">
-                <h3 class="title">Николай Тарасов</h3>
+              <div class="team-group">
+                <h3 class="subtitle">Николай Тарасов</h3>
                 <p class="text">Marketing</p>
                 <ul class="inner-list list">
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Инстаграм"
                         width="20"
                         height="20"
@@ -393,13 +390,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Твиттер"
                         width="20"
                         height="20"
@@ -410,13 +407,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Фейсбук"
                         width="20"
                         height="20"
@@ -427,13 +424,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Линкедин"
                         width="20"
                         height="20"
@@ -451,19 +448,19 @@
                 width="270"
                 alt="Михаил Ермаков"
               />
-              <div class="team-bg">
-                <h3 class="title">Михаил Ермаков</h3>
+              <div class="team-group">
+                <h3 class="subtitle">Михаил Ермаков</h3>
                 <p class="text">Marketing</p>
                 <ul class="inner-list list">
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Инстаграм"
                         width="20"
                         height="20"
@@ -474,13 +471,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Твиттер"
                         width="20"
                         height="20"
@@ -491,13 +488,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Фейсбук"
                         width="20"
                         height="20"
@@ -508,13 +505,13 @@
                   </li>
                   <li class="inner-item">
                     <a
-                      class="link button"
+                      class="link"
                       href="http://"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        class="button-icon"
+                        class="icon"
                         aria-label="Линкедин"
                         width="20"
                         height="20"
@@ -531,16 +528,11 @@
       <!--section clients-->
       <section class="section clients">
         <div class="container">
-          <h2 class="section-title">Наши клиенты</h2>
+          <h2 class="title">Наши клиенты</h2>
           <ul class="list">
             <li class="item">
-              <a class="link client-logo" href="">
-                <svg
-                  class="client-icon"
-                  aria-label="Клиент 1"
-                  width="106"
-                  height="60"
-                >
+              <a class="link" href="">
+                <svg class="icon" aria-label="Клиент 1" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-client1"></use>
                 </svg>
               </a>
@@ -614,95 +606,73 @@
       <div class="container">
         <div class="contact">
           <a
-            class="logo"
+            class="link logo"
             href="./index.html"
             aria-label="Логотип компании Web Studio"
-            ><span class="logo-web">Web</span
-            ><span class="logo-studio">Studio</span></a
+            ><span class="web">Web</span><span class="studio">Studio</span></a
           >
+
           <address class="address">
             <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="list">
               <li class="item">
-                <a class="footer-link" href="mailto:info@devstudio.com"
+                <a class="link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="footer-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="social-links">
           <p class="text">присоединяйтесь</p>
-          <ul class="inner-list list">
-            <li class="inner-item">
+          <ul class="list">
+            <li class="item">
               <a
-                class="link button"
+                class="link"
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="button-icon"
-                  aria-label="Инстаграм"
-                  width="20"
-                  height="20"
-                >
+                <svg class="icon" aria-label="Инстаграм" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="inner-item">
+            <li class="item">
               <a
-                class="link button"
+                class="link"
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="button-icon"
-                  aria-label="Твиттер"
-                  width="20"
-                  height="20"
-                >
+                <svg class="icon" aria-label="Твиттер" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="inner-item">
+            <li class="item">
               <a
-                class="link button"
+                class="link"
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="button-icon"
-                  aria-label="Фейсбук"
-                  width="20"
-                  height="20"
-                >
+                <svg class="icon" aria-label="Фейсбук" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="inner-item">
+            <li class="item">
               <a
-                class="link button"
+                class="link"
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg
-                  class="button-icon"
-                  aria-label="Линкедин"
-                  width="20"
-                  height="20"
-                >
+                <svg class="icon" aria-label="Линкедин" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
